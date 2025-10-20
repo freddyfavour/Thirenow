@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-/* Lobster font is loaded via <link> in index.html for better performance */
 
 :root{
-	--brand: #3C3446;
+	--brand: #3E2455;
 }
 
 html{

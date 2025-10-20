@@ -7,7 +7,7 @@ const AboutSection = () => {
         From Hiring to Empowering Africa’s Next Tech Talents
       </h2>
       <p className="text-lg md:text-xl text-black mb-10 font-nunito max-w-2xl mx-auto">
-        ThireNow Technologies started as a global hiring platform helping tech professionals land remote jobs. Now, we’re going beyond hiring — we’re building an Academy that trains, mentors, and connects Africans to real opportunities in the global tech ecosystem.
+        ThireNow Technologies started as a global hiring platform helping tech professionals land remote jobs. Now, we’re going beyond hiring. We’re building an Academy that trains, mentors, and connects Africans to real opportunities in the global tech ecosystem.
       </p>
       {/* Video or GIF intro can be added here */}
     </section>

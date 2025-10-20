@@ -15,20 +15,18 @@ const skills = [
     description: "Build reliable web apps using modern frontend and backend tools.",
   },
   { name: "Cybersecurity", description: "Learn to protect apps and infrastructure from attacks." },
-  { name: "Digital Marketing", description: "Reach and grow audiences with performance marketing." },
-  { name: "AI & No-Code Tools", description: "Leverage AI and no-code to prototype faster and scale." },
-  { name: "Content Creation", description: "Craft compelling content — video, copy and social — that converts." },
+  { name: "Content Creation", description: "Craft compelling content, video, copy and social that converts." },
 ];
 
 const SkillsSection = () => {
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="max-w-3xl mx-auto text-left mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             In-Demand Skills You Can Learn
           </h2>
-          <p className="text-gray-600">We teach the practical skills companies hire for — hands-on, project-led training that gets you job-ready.</p>
+          <p className="text-gray-600 mx-auto">We teach the practical skills companies hire for hands-on, project-led training that gets you job-ready.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -40,6 +38,7 @@ const SkillsSection = () => {
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="9" stroke="rgba(76,29,149,0.7)" strokeWidth="1.2" />
                     <path d="M8 12h8" stroke="rgba(76,29,149,0.7)" strokeWidth="1.6" strokeLinecap="round" />
+                    <path d="M12 8v8" stroke="rgba(76,29,149,0.7)" strokeWidth="1.6" strokeLinecap="round" />
                   </svg>
                 </div>
 

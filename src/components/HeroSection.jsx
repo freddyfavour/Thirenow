@@ -7,11 +7,11 @@ const HeroSection = () => {
     <div className="relative z-20 w-full px-4 md:px-8 lg:px-12">
   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-20 max-w-none">
           {/* Left column - headline & CTA */}
-          <div className="lg:col-span-7 px-4 md:px-6 flex flex-col justify-start pt-12 md:pt-20 lg:pt-[15rem]">
+          <div className="lg:col-span-7 px-4 md:px-6 flex flex-col justify-start pt-28 md:pt-36 lg:pt-[15rem]">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
                 Kickstart Your Tech Career with
-                <span className="block text-[var(--brand)] inline-block font-artistic" style={{ textShadow: '0 1px 0 rgba(0,0,0,0.08)' }}> THireNow Technologies</span>
+                <span className="block text-[var(--brand)] inline-block" style={{ textShadow: '0 1px 0 rgba(0,0,0,0.08)' }}> THireNow Technologies</span>
               </h1>
 
               <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className="relative w-full mt-6" style={{ height: 'calc(100vh - 1.5rem)' }}>
               {/* image card */}
               <div className="rounded-4xl overflow-hidden shadow-2xl w-full h-full" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
-                <img src="/src/assets/hero-bg.jpg" alt="Hero" className="object-cover w-full h-full block" />
+                <img src="/hero-bg.jpg" alt="Hero" className="object-cover w-full h-full block" />
               </div>
 
               {/* small stat card at top-right */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 4 4 6.5 4c1.54 0 3.04.99 3.57 2.36h1.87C13.46 4.99 14.96 4 16.5 4 19 4 21 6 21 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#ef4444" />
                 </svg>
-                <span className="text-sm text-gray-800">I Love THireNow. I got my current jon after graduation</span>
+                <span className="text-sm text-gray-800">ThireNow helped me land my first remote job</span>
               </div>
             </div>
           </div>

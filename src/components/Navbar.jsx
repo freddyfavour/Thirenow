@@ -29,15 +29,12 @@ const Navbar = () => {
             <a href="#testimonials" className="hover:underline">Testimonials</a>
           </div>
 
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <a href="#register" className="px-4 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</a>
           </div>
 
           {/* mobile controls */}
           <div className="flex items-center md:hidden ml-auto">
-            <a href="#register" className="mr-3 text-gray-800">
-              <span className="inline-flex items-center px-3 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</span>
-            </a>
             <button aria-label="Toggle menu" onClick={() => setMobileOpen(!mobileOpen)} className="p-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200">
               {mobileOpen ? (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
