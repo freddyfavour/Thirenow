@@ -40,7 +40,7 @@ const RegistrationForm = () => {
 
   return (
     <section className="bg-white py-20 px-4 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#6C2DC7] mb-6 font-poppins">
+      <h2 className="text-3xl md:text-4xl font-bold text-[var(--brand)] mb-6 font-poppins">
         Join ThireNow Tech Academy Today!
       </h2>
       <p className="text-lg md:text-xl text-black mb-10 font-nunito max-w-2xl mx-auto">
@@ -109,7 +109,7 @@ const RegistrationForm = () => {
         </select>
         <button
           type="submit"
-          className="bg-[#6C2DC7] text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:bg-[#4B1A8A] transition"
+          className="bg-[var(--brand)] text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:opacity-95 transition"
         >
           Get Started
         </button>

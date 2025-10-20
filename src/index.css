@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+/* Lobster font is loaded via <link> in index.html for better performance */
+
+:root{
+	--brand: #3C3446;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+ 	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+/* Apply the artistic display font where needed */
+.font-artistic {
+	font-family: 'Lobster', cursive;
+}

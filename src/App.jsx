@@ -1,5 +1,6 @@
 
 import './App.css';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
@@ -13,6 +14,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="font-poppins bg-white">
+      <Navbar />
       <a id="hero" />
       <HeroSection />
       <a id="about" />
