@@ -19,6 +19,11 @@ body {
 	background-color: #ffffff;
 }
 
+/* Smooth transform/opacity animations for components that animate on scroll */
+.animate-on-scroll {
+  will-change: opacity, transform;
+}
+
 /* Apply the artistic display font where needed */
 .font-artistic {
 	font-family: 'Lobster', cursive;

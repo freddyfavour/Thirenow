@@ -1,20 +1,5 @@
 import React from "react";
 
-const features = [
-  {
-    title: "Practical Learning",
-    desc: "Get hands-on with real projects.",
-  },
-  {
-    title: "Global Mentors",
-    desc: "Learn from experienced tech professionals.",
-  },
-  {
-    title: "Career Support",
-    desc: "We help you land your dream remote job.",
-  },
-];
-
 const WhyChooseSection = () => {
   return (
     <section className="bg-white py-20 px-4">

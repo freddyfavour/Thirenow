@@ -34,7 +34,7 @@ const HeroSection = () => {
           {/* Left column - headline & CTA */}
           <div ref={leftRef} className="lg:col-span-7 px-4 md:px-6 flex flex-col justify-start pt-28 md:pt-36 lg:pt-[15rem]">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-[var(--brand)] leading-tight mb-6">
                 Kickstart Your Tech Career with
                 <span className="block text-[var(--brand)] inline-block" style={{ textShadow: '0 1px 0 rgba(0,0,0,0.08)' }}> THireNow Technologies</span>
               </h1>
