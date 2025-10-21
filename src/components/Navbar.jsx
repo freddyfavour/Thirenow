@@ -19,18 +19,19 @@ const Navbar = () => {
         <div className="flex items-center justify-start h-16 max-w-[1400px] gap-8">
           <a href="#hero" className="flex items-center gap-3">
             <img src="/logo.png" alt="ThireNow" className="h-10 md:h-12" />
+            <span className="text-xl md:text-2xl font-bold font-poppins text-[#3E2455]">THireNow</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8 text-gray-800 font-medium">
             <a href="#about" className="hover:underline">About</a>
             <a href="#skills" className="hover:underline">Skills</a>
             <a href="#why" className="hover:underline">Why</a>
-            <a href="#community" className="hover:underline">Community</a>
+            <a href="https://chat.whatsapp.com/IUv65G2m3G1597stvVsUv2?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:underline">Community</a>
             <a href="#testimonials" className="hover:underline">Testimonials</a>
           </div>
 
           <div className="hidden lg:flex items-center">
-            <a href="#register" className="px-4 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</a>
+            <a href="https://chat.whatsapp.com/IUv65G2m3G1597stvVsUv2?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</a>
           </div>
 
           {/* mobile controls */}
@@ -55,9 +56,9 @@ const Navbar = () => {
               <a onClick={() => setMobileOpen(false)} href="#about" className="text-gray-800 py-2">About</a>
               <a onClick={() => setMobileOpen(false)} href="#skills" className="text-gray-800 py-2">Skills</a>
               <a onClick={() => setMobileOpen(false)} href="#why" className="text-gray-800 py-2">Why</a>
-              <a onClick={() => setMobileOpen(false)} href="#community" className="text-gray-800 py-2">Community</a>
+              <a onClick={() => setMobileOpen(false)} href="https://chat.whatsapp.com/IUv65G2m3G1597stvVsUv2?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="text-gray-800 py-2">Community</a>
               <a onClick={() => setMobileOpen(false)} href="#testimonials" className="text-gray-800 py-2">Testimonials</a>
-              <a onClick={() => setMobileOpen(false)} href="#register" className="mt-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</a>
+              <a onClick={() => setMobileOpen(false)} href="https://chat.whatsapp.com/IUv65G2m3G1597stvVsUv2?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center justify-center px-4 py-2 rounded-full bg-[color:var(--brand)] text-white font-semibold">Join</a>
             </div>
           </div>
         )}

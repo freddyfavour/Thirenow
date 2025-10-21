@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const skills = [
-  "Product Design",
   "Product Management",
-  "Data Analysis",
-  "Software Development",
+  "Product Design (UI/UX)",
+  "Data Analytics",
+  "Frontend",
+  "Backend Development",
   "Cybersecurity",
-  "Content Creation and Marketing",
-  "Graphics Design",
+  "Content Creation",
 ];
 
 const sources = [
@@ -34,8 +34,16 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Handle form submission (API, email, etc.)
-    alert("Thank you for registering! We'll be in touch soon.");
+    const subject = encodeURIComponent("ThireNow Tech Academy Registration");
+    const body = encodeURIComponent(
+      `Full Name: ${form.name}\n` +
+      `Email Address: ${form.email}\n` +
+      `Phone Number: ${form.phone}\n` +
+      `Country: ${form.country}\n` +
+      `Tech Skill Interested In: ${form.skill}\n` +
+      `How did you hear about us?: ${form.source}`
+    );
+  window.open(`mailto:dellaadetife@gmail.com?subject=${subject}&body=${body}`, '_blank');
   };
 
   return (

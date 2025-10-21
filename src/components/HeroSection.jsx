@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const HeroSection = () => {
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+
+  useEffect(() => {
+    // Animate both elements at the same time
+    const tl = gsap.timeline();
+    
+    tl.fromTo(
+      leftRef.current,
+      { opacity: 0, y: 40 },
+      { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' },
+      0
+    ).fromTo(
+      rightRef.current,
+      { opacity: 0, x: 120 },
+      { opacity: 1, x: 0, duration: 1.2, ease: 'power3.out' },
+      0
+    );
+
+    // Cleanup
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center bg-white">
-
-    <div className="relative z-20 w-full px-4 md:px-8 lg:px-12">
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-20 max-w-none">
+      <div className="relative z-20 w-full px-4 md:px-8 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-20 max-w-none">
           {/* Left column - headline & CTA */}
-          <div className="lg:col-span-7 px-4 md:px-6 flex flex-col justify-start pt-28 md:pt-36 lg:pt-[15rem]">
+          <div ref={leftRef} className="lg:col-span-7 px-4 md:px-6 flex flex-col justify-start pt-28 md:pt-36 lg:pt-[15rem]">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
                 Kickstart Your Tech Career with
@@ -27,11 +52,11 @@ const HeroSection = () => {
           </div>
 
           {/* Right column - rounded image card */}
-          <div className="lg:col-span-5 px-4 md:px-0">
+          <div ref={rightRef} className="lg:col-span-5 px-4 md:px-0">
             <div className="relative w-full mt-6" style={{ height: 'calc(100vh - 1.5rem)' }}>
               {/* image card */}
               <div className="rounded-4xl overflow-hidden shadow-2xl w-full h-full" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
-                <img src="/hero-bg.jpg" alt="Hero" className="object-cover w-full h-full block" />
+                <img src="/hero-bg.webp" alt="Hero" className="object-cover w-full h-full block" />
               </div>
 
               {/* small stat card at top-right */}

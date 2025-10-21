@@ -13,7 +13,7 @@ const CommunitySection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#community" className="inline-flex items-center justify-center bg-white text-[color:var(--brand)] font-semibold py-3 px-6 rounded-full shadow-sm hover:shadow-md transition">Join the Community</a>
+              <a href="https://chat.whatsapp.com/IUv65G2m3G1597stvVsUv2?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-white text-[color:var(--brand)] font-semibold py-3 px-6 rounded-full shadow-sm hover:shadow-md transition">Join the Community</a>
               <a href="#register" className="inline-flex items-center justify-center border border-white/30 text-white font-medium py-3 px-6 rounded-full hover:bg-white/5 transition">See Programs</a>
             </div>
           </div>

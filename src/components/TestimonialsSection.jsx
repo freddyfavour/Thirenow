@@ -6,21 +6,21 @@ const testimonials = [
     role: "Frontend Developer",
     quote:
       "ThireNow helped me land my first remote job and the webinars were super insightful!",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    img: "/person1.png",
   },
   {
     name: "Chinedu O.",
     role: "UI/UX Designer",
     quote:
       "The Academy’s community and mentors are top-notch. I feel ready for global tech roles!",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    img: "/person2.png",
   },
   {
     name: "Mercy A.",
-    role: "Mentor",
+    role: "Instructor",
     quote:
       "I love helping young Africans break into tech. ThireNow is making a real impact!",
-    img: "https://randomuser.me/api/portraits/women/65.jpg",
+    img: "/person3.png",
   },
 ];
 
