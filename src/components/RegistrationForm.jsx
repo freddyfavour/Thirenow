@@ -33,18 +33,22 @@ const RegistrationForm = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const subject = encodeURIComponent("ThireNow Tech Academy Registration");
-    const body = encodeURIComponent(
-      `Full Name: ${form.name}\n` +
-      `Email Address: ${form.email}\n` +
-      `Phone Number: ${form.phone}\n` +
-      `Country: ${form.country}\n` +
-      `Tech Skill Interested In: ${form.skill}\n` +
-      `How did you hear about us?: ${form.source}`
-    );
-  window.open(`mailto:dellaadetife@gmail.com?subject=${subject}&body=${body}`, '_blank');
-  };
+  e.preventDefault();
+
+  const rawMessage = 
+    `Full Name: ${form.name}\n` +
+    `Email Address: ${form.email}\n` +
+    `Phone Number: ${form.phone}\n` +
+    `Country: ${form.country}\n` +
+    `Tech Skill Interested In: ${form.skill}\n` +
+    `How did you hear about us?: ${form.source}`;
+
+  const encodedMessage = encodeURIComponent(rawMessage);
+
+  const whatsappNumber = '2348050941714';
+
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+};
 
   return (
     <section className="bg-white py-20 px-4 text-center">
